@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Brain, TrendingUp, DollarSign, Users, Target, Megaphone, Package, Shield, BarChart3, Zap, Play, Loader, CheckCircle, FileText, X, ArrowLeft, ChevronRight } from 'lucide-react';
+import { Brain, TrendingUp, DollarSign, Users, Target, Megaphone, Package, Shield, BarChart3, Zap, Loader, CheckCircle, FileText, X, ArrowLeft, ChevronRight } from 'lucide-react';
 
 const API_URL = 'http://localhost:5000/api';
 
