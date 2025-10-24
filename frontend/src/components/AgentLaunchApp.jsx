@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Brain, TrendingUp, DollarSign, Users, Target, Megaphone, Package, Shield, BarChart3, Zap, Loader, CheckCircle, FileText, X, ArrowLeft, ChevronRight } from 'lucide-react';
 
-const API_URL = 'https://ai-product-backend-hjh7bdg0a7f3ebdb.canadacentral-01.azurewebsites.net/api';
+const API_URL = 'aiproduct-gtbfc3aah7edaxgr.canadacentral-01.azurewebsites.net/api';
 
 const colors = {
   primary: '#2C3E50',
