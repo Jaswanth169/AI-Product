@@ -27,10 +27,10 @@ jobs:
         working-directory: ./backend
         run: |
           python -m venv venv
+          # Activate venv properly for GitHub Actions
           source venv/bin/activate
-          pip install --upgrade pip
-          pip install -r requirements.txt
-
+          python -m pip install --upgrade pip
+          python -m pip install -r requirements.txt
 
       - name: Archive backend for deployment
         working-directory: ./backend
@@ -69,4 +69,3 @@ jobs:
           app-name: 'ai-product-backend'
           slot-name: 'Production'
           package: backend.zip
-
