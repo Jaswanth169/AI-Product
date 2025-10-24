@@ -31,6 +31,7 @@ jobs:
           pip install --upgrade pip
           pip install -r requirements.txt
 
+
       - name: Archive backend for deployment
         working-directory: ./backend
         run: |
@@ -68,3 +69,4 @@ jobs:
           app-name: 'ai-product-backend'
           slot-name: 'Production'
           package: backend.zip
+
