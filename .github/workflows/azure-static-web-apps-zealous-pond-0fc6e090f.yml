@@ -35,7 +35,8 @@ jobs:
 
       - name: Build React app
         working-directory: ./frontend
-        run: npm run build
+        run: |
+          CI=false npm run build
 
       - name: Deploy to Azure Static Web App
         id: builddeploy
@@ -59,3 +60,4 @@ jobs:
         with:
           azure_static_web_apps_api_token: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN_ZEALOUS_POND_0FC6E090F }}
           action: "close"
+
